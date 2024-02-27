@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="py-8">
       <div className="px-[20px]">
         <h1 className="text-center text-[24px] text-bluenitas leading-[40px] font-semibold">
-          Over 25 years of experience
+          Over 15 years of experience
         </h1>
         <p className="text-center py-4">
           in the confectionery paper and paper processing industry
