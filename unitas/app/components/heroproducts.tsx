@@ -1,7 +1,3 @@
-import Image from "next/image";
-import HeroImage from "../../public/assets/untitled.jpg";
-import HeroSlideImage from "../../public/assets/heroslideshowimage.jpg";
-
 export default function Hero() {
   return (
     <div className="py-8">
