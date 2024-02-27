@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="text-whitenitas flex gap-x-[20px] px-[10px] sm:gap-x-[20px] sm:px-[10px] md:px-[25px] lg:px-[100px]">
         <div>
           {navLinks.map((item, index) => (
-            <Link href={item.route}>
+            <Link href={item.route} key={index}>
               <div
                 className="whitespace-nowrap text-whitenitas bg-bluenitas px-4 py-2 md:px-8 lg:px-12 lg:py-6"
                 key={index}
