@@ -11,7 +11,7 @@ export default function Hero() {
         </h1>
         <p className="text-center py-4">
           We offer a variety of graphic (LWC, SC, newspaper, wood-free,
-          cardboard) and confectionery (kraft, polyethylene) papers.
+          cardboard) and packing (kraft, polyethylene) papers.
         </p>
       </div>
 
@@ -106,11 +106,29 @@ export default function Hero() {
       </p>
 
       <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 ml-3 w-3/4">
-        <h1 className="pt-[5px]">Kraft paper</h1>
+        <h1 className="pt-[5px]">Packing paper</h1>
       </div>
 
       <h1 className="text-left text-[24px] text-bluenitas font-semibold mt-8 px-8 underline">
-        Polyethylene kraft paper
+        Kraft paper
+      </h1>
+      <div className="px-[20px] py-4">
+        <p className="text-center pt-8">
+          Kraft paper coated with polyethylene serves as a reliable moisture and
+          grease barrier. It is commonly used in packaging and other
+          applications where safeguarding against environmental factors is
+          essential. Our kraft paper derives from cooperate+ion with Gruenewald
+          paper factories which target non-European markets exclusively, notably
+          Africa and Asia.
+        </p>
+        <p className="text-center py-1 px-2">Brightness: Standard</p>
+      </div>
+      <p className="text-center underline pt-2 pb-12 font-semibold border-b-2 border-bluenitas">
+        <a href="/contact">Make an enquiry &rarr;</a>
+      </p>
+
+      <h1 className="text-left text-[24px] text-bluenitas font-semibold mt-8 px-8 underline">
+        Kraft paper with polyethylene
       </h1>
       <div className="px-[20px] py-4">
         <p className="text-center pt-8">
