@@ -1,3 +1,7 @@
+import Image from "next/image";
+import ProductImage from "../../public/assets/products.jpg";
+
+
 export default function Hero() {
   return (
     <div className="py-8">
@@ -9,6 +13,12 @@ export default function Hero() {
           We offer a variety of graphic (LWC, SC, newspaper, wood-free,
           cardboard) and confectionery (kraft, polyethylene) papers.
         </p>
+      </div>
+
+      <div className="flex w-full py-6">
+        <div className="lg:w-2/4">
+          <Image src={ProductImage} alt="hero image" className="object-cover" />
+        </div>
       </div>
 
       <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 ml-3 w-3/4">
@@ -24,7 +34,6 @@ export default function Hero() {
           mechanical pulping process. This process grinds up logs or woodchips
           rather than using chemicals to separate the wood fibres.
         </p>
-        <p className="text-center py-1 px-2">Paper weight: 36-70 gsm</p>
         <p className="text-center py-1 px-2">Brightness: Standard</p>
       </div>
       <p className="text-center underline pt-2 pb-12 font-semibold border-b-2 border-bluenitas">
@@ -40,7 +49,6 @@ export default function Hero() {
           primarily used for the publication of consumer magazines, catalogues,
           and advertising material.
         </p>
-        <p className="text-center py-1 px-2">Paper weight: 36-70 gsm</p>
         <p className="text-center py-1 px-2">Brightness: Standard</p>
       </div>
       <p className="text-center underline pt-2 pb-12 font-semibold border-b-2 border-bluenitas">
@@ -57,7 +65,6 @@ export default function Hero() {
           and advertising material. The paper typically has an off-white color
           and a distinctive feel.
         </p>
-        <p className="text-center py-1 px-2">Paper weight: 42-60 gsm</p>
         <p className="text-center py-1 px-2">Brightness: Standard</p>
       </div>
       <p className="text-center underline pt-2 pb-12  font-semibold border-b-2 border-bluenitas">
@@ -76,9 +83,6 @@ export default function Hero() {
           removal of lignin makes wood-free paper less susceptible to yellowing
           as it ages. We offer uncoated and coated wood-free paper.
         </p>
-        <p className="text-center py-1 px-2">
-          Paper weight: 60 (uncoated)-70 (coated) gsm
-        </p>
         <p className="text-center py-1 px-2">Brightness: Standard</p>
       </div>
       <p className="text-center underline pt-2 pb-12 font-semibold border-b-2 border-bluenitas">
@@ -95,7 +99,6 @@ export default function Hero() {
           graphic printing, such as book and magazine covers or postcards.
           Paperboard is also used in fine arts for creating sculptures.
         </p>
-        <p className="text-center py-1 px-2">Paper weight: 115-300 gsm</p>
         <p className="text-center py-1 px-2">Brightness: Standard</p>
       </div>
       <p className="text-center underline pt-2 pb-12 font-semibold border-b-2 border-bluenitas">
@@ -103,7 +106,7 @@ export default function Hero() {
       </p>
 
       <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 ml-3 w-3/4">
-        <h1 className="pt-[5px]">Craft paper</h1>
+        <h1 className="pt-[5px]">Kraft paper</h1>
       </div>
 
       <h1 className="text-left text-[24px] text-bluenitas font-semibold mt-8 px-8 underline">
@@ -118,7 +121,6 @@ export default function Hero() {
           paper factories which target non-European markets exclusively, notably
           Africa and Asia.
         </p>
-        <p className="text-center py-1 px-2">Paper weight: 245 gsm</p>
         <p className="text-center py-1 px-2">Brightness: Standard</p>
       </div>
       <p className="text-center underline pt-2 pb-12 font-semibold border-b-2 border-bluenitas">
