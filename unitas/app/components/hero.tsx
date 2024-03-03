@@ -24,7 +24,7 @@ export default function Hero() {
         </div>
         <div className="w-full lg:w-2/4">
           <div>
-            <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 ml-3 w-3/4 lg:-skew-x-[30deg] rounded-lg">
+            <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 w-full md:w-3/4 lg:-skew-x-[30deg] rounded-lg">
               <h1 className="pt-[5px] lg:skew-x-[30deg] font-semibold">
                 A family business...
               </h1>
@@ -48,7 +48,7 @@ export default function Hero() {
             </div>
           </div>
           <div>
-            <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 ml-3 w-3/4 lg:skew-x-[30deg] rounded-lg">
+            <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 w-full md:w-3/4 lg:skew-x-[30deg] rounded-lg">
               <h1 className="pt-[5px] lg:-skew-x-[30deg] font-semibold">
                 Our vision...
               </h1>
