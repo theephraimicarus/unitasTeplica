@@ -17,7 +17,7 @@ export default function NavBar() {
         </Link>
       </div>
 
-      <div className="text-whitenitas flex gap-x-[20px] px-[10px] sm:gap-x-[20px] sm:px-[10px] md:px-[25px] lg:px-[100px]">
+      <div className="text-whitenitas flex gap-x-[20px] px-[10px] sm:gap-x-[20px] sm:px-[10px] md:px-[25px] lg:px-[100px] lg:font-semibold lg:text-[24px]">
         <div className="border-whitenitas border-2 sm:flex">
           {navLinks.map((item, index) => (
             <Link href={item.route} key={index}>
