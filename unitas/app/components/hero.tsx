@@ -14,47 +14,55 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="flex w-full py-6">
-        <div className="lg:w-2/4">
+      <div className="relative lg:flex my-8">
+        <div className="w-full lg:w-2/4 py-6">
           <Image src={HeroImage} alt="hero image" className="object-cover" />
+        </div>
+        <div className="w-full lg:w-2/4">
+          <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 ml-3 w-3/4">
+            <h1 className="pt-[5px]">A family business...</h1>
+          </div>
+          <div className="px-[20px] py-4 lg:w-3/4">
+            <p className="text-center pt-8">
+              Founded in 1999 originally as a bakery and based in Teslić, Bosnia
+              and Herzegovina, we are a family business which, for the last 15
+              years, specializes in processing paper. We deal with
+              confectionary, graphic and packing paper.
+              <br />
+              Our services include custom paper cutting, reel to reel as well as
+              reel to sheet processing. We also do stock-lots with kraft paper.
+            </p>
+            <a href="/products">
+              <p className="text-center underline pt-2 pb-6 font-semibold">
+                View our products &rarr;
+              </p>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 ml-3 w-3/4">
-        <h1 className="pt-[5px]">A family business...</h1>
-      </div>
-      <div className="px-[20px] py-4">
-        <p className="text-center pt-8">
-          Founded in 1999 originally as a bakery and based in Teslić, Bosnia and
-          Herzegovina, we are a family business which, for the last 15 years,
-          specializes in processing paper. We deal with confectionary, graphic
-          and packing paper.
-          <br />
-          Our services include custom paper cutting, reel to reel as well as
-          reel to sheet processing. We also do stock-lots with kraft paper.
-        </p>
-      </div>
-
-      <a href="/products">
-        <p className="text-center underline pt-2 pb-6 font-semibold">
-          View our products &rarr;
-        </p>
-      </a>
-
-      <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 ml-3 w-3/4">
-        <h1 className="pt-[5px]">Our vision...</h1>
-      </div>
-      <div className="px-[20px] py-4">
-        <p className="text-center pt-8">
-          Our companys primary goal is to provide quality, in which we are
-          proven by our long-term customer satisfaction, a trait that goes for
-          as long as our 15 years of paper industry history can be traced. We
-          are also in the process of expanding our cooperation with clients from
-          out of Europe, thus targeting the African and Asian markets.
-        </p>
-      </div>
-      <div className="flex w-full pt-6">
-        <div className="lg:w-2/4">
+      <div className="relative lg:flex ">
+        <div className="w-full lg:w-2/4">
+          <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 ml-3 w-3/4">
+            <h1 className="pt-[5px]">Our vision...</h1>
+          </div>
+          <div className="px-[20px] py-4 lg:w-3/4">
+            <p className="text-center pt-8">
+              Our companys primary goal is to provide quality, in which we are
+              proven by our long-term customer satisfaction, a trait that goes
+              for as long as our 15 years of paper industry history can be
+              traced. We are also in the process of expanding our cooperation
+              with clients from out of Europe, thus targeting the African and
+              Asian markets.
+            </p>
+            <a href="/products">
+              <p className="text-center underline pt-2 pb-6 font-semibold">
+                View our products &rarr;
+              </p>
+            </a>
+          </div>
+        </div>
+        <div className="w-full lg:w-2/4 py-6">
           <Image
             src={HeroSlideImage}
             alt="hero image"
@@ -62,6 +70,8 @@ export default function Hero() {
           />
         </div>
       </div>
+
+      
     </div>
   );
 }
