@@ -40,7 +40,7 @@ export default function HeroProducts() {
                 logs or woodchips rather than using chemicals to separate the
                 wood fibres.
               </p>
-              <a href="/products">
+              <a href="/contact">
                 <p className="text-center underline pt-2 pb-6 font-semibold border-b-2 border-bluenitas lg:-skew-x-[30deg] text-[#405482]">
                   Make an enquiry &rarr;
                 </p>
@@ -58,7 +58,7 @@ export default function HeroProducts() {
                 gloss, primarily used for the publication of consumer magazines,
                 catalogues, and advertising material.
               </p>
-              <a href="/products">
+              <a href="/contact">
                 <p className="text-center underline pt-2 pb-6 font-semibold border-b-2 border-bluenitas lg:skew-x-[30deg] text-[#405482]">
                   Make an enquiry &rarr;
                 </p>
@@ -89,7 +89,7 @@ export default function HeroProducts() {
                 wood-free paper less susceptible to yellowing as it ages. We
                 offer uncoated and coated wood-free paper.
               </p>
-              <a href="/products">
+              <a href="/contact">
                 <p className="text-center underline pt-2 pb-6 font-semibold border-b-2 border-bluenitas lg:skew-x-[30deg] text-[#405482]">
                   Make an enquiry &rarr;
                 </p>
@@ -109,7 +109,7 @@ export default function HeroProducts() {
                 publications and advertising material. The paper typically has
                 an off-white color and a distinctive feel.
               </p>
-              <a href="/products">
+              <a href="/contact">
                 <p className="text-center underline pt-2 pb-6 font-semibold border-b-2 border-bluenitas lg:-skew-x-[30deg] text-[#405482]">
                   Make an enquiry &rarr;
                 </p>
@@ -129,7 +129,7 @@ export default function HeroProducts() {
                 or postcards. Paperboard is also used in fine arts for creating
                 sculptures.
               </p>
-              <a href="/products">
+              <a href="/contact">
                 <p className="text-center underline pt-2 pb-6 font-semibold border-b-2 border-bluenitas lg:skew-x-[30deg] text-[#405482]">
                   Make an enquiry &rarr;
                 </p>
@@ -165,7 +165,7 @@ export default function HeroProducts() {
                 resistance, designed for packaging products with high demands
                 for strength and durability.
               </p>
-              <a href="/products">
+              <a href="/contact">
                 <p className="text-center underline pt-2 pb-6 font-semibold border-b-2 border-bluenitas lg:-skew-x-[30deg] text-[#405482]">
                   Make an enquiry &rarr;
                 </p>
@@ -186,7 +186,7 @@ export default function HeroProducts() {
                 with Gruenewald paper factories which target non-European
                 markets exclusively, notably Africa and Asia.
               </p>
-              <a href="/products">
+              <a href="/contact">
                 <p className="text-center underline pt-2 pb-6 font-semibold border-b-2 border-bluenitas lg:skew-x-[30deg] text-[#405482]">
                   Make an enquiry &rarr;
                 </p>
