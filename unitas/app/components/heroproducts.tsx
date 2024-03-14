@@ -163,7 +163,9 @@ export default function HeroProducts() {
                 chemical pulp produced in the kraft process. Sack kraft paper is
                 a porous kraft paper with high elasticity and high tear
                 resistance, designed for packaging products with high demands
-                for strength and durability.
+                for strength and durability. Our kraft paper derives from cooperation
+                with Gruenewald paper factories which target non-European
+                markets exclusively, notably Africa and Asia.
               </p>
               <a href="/contact">
                 <p className="text-center underline pt-2 pb-6 font-semibold border-b-2 border-bluenitas lg:-skew-x-[30deg] text-[#405482]">
@@ -182,9 +184,7 @@ export default function HeroProducts() {
                 Kraft paper coated with polyethylene serves as a reliable
                 moisture and grease barrier. It is commonly used in packaging
                 and other applications where safeguarding against environmental
-                factors is essential. Our kraft paper derives from cooperation
-                with Gruenewald paper factories which target non-European
-                markets exclusively, notably Africa and Asia.
+                factors is essential. 
               </p>
               <a href="/contact">
                 <p className="text-center underline pt-2 pb-6 font-semibold border-b-2 border-bluenitas lg:skew-x-[30deg] text-[#405482]">
