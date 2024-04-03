@@ -2,7 +2,7 @@ import Image from "next/image";
 import HeroImage from "../../public/assets/Untitled.jpg";
 import HeroSlideImage from "../../public/assets/heroslideshowimage.jpg";
 
-export default function Hero() {
+export default function HeroMain() {
   return (
     <div className="py-8">
       <div className="px-[20px]">
