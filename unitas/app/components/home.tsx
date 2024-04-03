@@ -1,7 +1,7 @@
 import Image from "next/image";
 import HeroImage from "../../public/assets/Untitled.jpg";
 
-export default function HeroMain() {
+export default function HomePage() {
   return (
     <div className="py-8">
       <div className="px-[20px]">

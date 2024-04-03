@@ -3,7 +3,7 @@ import ProductImage from "../../public/assets/products1.jpg";
 import ForkliftImage from "../../public/assets/forklift.jpg";
 import KraftSectionImage from "../../public/assets/kraftimage.jpg";
 
-export default function HeroProducts() {
+export default function ProductsPage() {
   return (
     <div className="py-8">
       <div className="px-[20px]">

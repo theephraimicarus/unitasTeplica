@@ -1,4 +1,4 @@
-export default function HeroContact() {
+export default function ContactPage() {
   return (
     <div>
       <div className="pt-6 mt-6 text-center flex justify-center items-center w-full">

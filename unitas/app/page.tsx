@@ -1,14 +1,14 @@
 "use client";
-import HeroMain from "./components/heromain";
+import HomePage from "./components/home";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
-import Slideshow from "./components/slide"
+import Slideshow from "./components/slideshow"
 
 export default function Home() {
   return (
     <>
       <NavBar/>
-      <HeroMain/>
+      <HomePage/>
       <Slideshow/>
       <Footer/>
     </>
