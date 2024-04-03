@@ -15,6 +15,7 @@ export default function HeroProducts() {
           cardboard) and PACKING (kraft, polyethylene) papers.
         </p>
       </div>
+      
       <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 w-full md:w-3/4 lg:-skew-x-[30deg] rounded-lg">
         <h1 className="pt-[5px] lg:skew-x-[30deg] font-semibold">
           Graphic papers
