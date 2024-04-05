@@ -33,7 +33,7 @@ const images = [
   };
 
   return (
-    <div className="relative h-full lg:h-[700px] lg:flex lg:mt-24">
+    <div className="relative h-full lg:h-[600px] lg:flex lg:mt-24">
       <div className="overflow-hidden rounded-lg">
       <Image
             src={images[currentSlide]}
