@@ -1,3 +1,6 @@
+# THIS IS A DEAD REPO
+### REPO CREATED FOR TEST PURPOSES ONLY
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
