@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import Image1 from "../../public/assets/heroslideshowimage.jpg"
 import Image2 from "../../public/assets/kraftimage.jpg"
 import Image3 from "../../public/assets/lwc.jpg"
+import Image4 from "../../public/assets/warehouse1.jpg"
+import Image5 from "../../public/assets/warehouse2.jpg"
 
 export default function Slideshow(){
 
@@ -11,6 +13,8 @@ const images = [
   Image1,
   Image2,
   Image3,
+  Image4,
+  Image5
   // Add more image URLs here
 ];
 
