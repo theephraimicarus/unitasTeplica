@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="py-8">
       <HeroContent
         title="Over 15 years of experience"
-        content="in thee confectionery paper and paper processing industry"
+        content="in the confectionery paper and paper processing industry"
       />
 
       <div className="relative lg:flex my-8">
@@ -24,13 +24,11 @@ export default function HomePage() {
         <div className="w-full lg:w-2/4">
           <HomeContent
             title="A family business..."
-            content="Founded in 1999 originally as a bakery and based in Teslić,
-                Bosnia and Herzegovina, we are a family business which, for the
-                last 15 years, specializes in processing paper. We deal with
-                confectionary, graphic and packing paper.
-                Our services include custom paper cutting, reel to reel as well
-                as reel to sheet processing. We also do stock-lots with kraft
-                paper."
+            content="Founded in 1999 and based in Teslić, we are a family-owned company specialized in paper processing and paper trading.
+<br/>
+For more than 15 years, we have been working with confectionery, graphic, packaging, and kraft paper, providing reliable converting solutions for customers across different industries. Our services include custom paper cutting, reel-to-reel and reel-to-sheet processing, rewinding, and stock-lot paper trading.
+<br/>
+With a strong focus on quality, flexibility, and fast delivery, we provide tailored paper solutions adapted to our customers specific requirements."
             divDirection="left"
             titleDivDirection="left"
           />
