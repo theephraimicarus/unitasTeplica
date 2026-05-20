@@ -1,5 +1,5 @@
+import React from "react";
 import Image from "next/image";
-import HeroImage from "../../public/assets/Untitled.jpg";
 import HeroContent from "./content/herocontent";
 import HomeContent from "./content/homecontent";
 
@@ -14,8 +14,10 @@ export default function HomePage() {
       <div className="relative lg:flex my-8">
         <div className="w-full lg:w-2/4 lg:py-6 ">
           <Image
-            src={HeroImage}
+            src="/assets/Untitled.jpg"
             alt="hero image"
+            width={500}
+            height={500}
             className="object-cover lg:rounded-bl-[10px] lg:hover:rounded-bl-[50px] lg:rounded-tr-[10px] lg:hover:rounded-tr-[50px]"
           />
         </div>
