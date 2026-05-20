@@ -25,9 +25,9 @@ export default function HomePage() {
           <HomeContent
             title="A family business..."
             content="Founded in 1999 and based in Teslić, we are a family-owned company specialized in paper processing and paper trading.
-<br/>
+<br>
 For more than 15 years, we have been working with confectionery, graphic, packaging, and kraft paper, providing reliable converting solutions for customers across different industries. Our services include custom paper cutting, reel-to-reel and reel-to-sheet processing, rewinding, and stock-lot paper trading.
-<br/>
+<br>
 With a strong focus on quality, flexibility, and fast delivery, we provide tailored paper solutions adapted to our customers specific requirements."
             divDirection="left"
             titleDivDirection="left"
