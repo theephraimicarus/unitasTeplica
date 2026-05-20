@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="py-8">
       <HeroContent
         title="Over 15 years of experience"
-        content="in the confectionery paper and paper processing industry"
+        content="in thee confectionery paper and paper processing industry"
       />
 
       <div className="relative lg:flex my-8">
