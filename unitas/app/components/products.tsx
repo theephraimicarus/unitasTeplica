@@ -10,8 +10,9 @@ export default function ProductsPage() {
     <div className="py-8">
       <HeroContent
         title="What we have to offer"
-        content="We offer a variety of GRAPHIC (LWC, SC, newspaper, wood-free,
-          cardboard) and PACKING (kraft, polyethylene) papers."
+        content="We offer a wide range of GRAPHIC (LWC, SC, newspaper, wood-free, cardboard) and PACKAGING (kraft, polyethylene) papers.
+
+As a responsible and reliable partner, we work with well-known European paper manufacturers and brands such as Steinbeis Papier, Burgo Group, Sappi, Stora Enso, and LEIPA, ensuring consistent quality, sustainable sourcing, and dependable service for our customers."
       />
 
       <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 w-full md:w-3/4 lg:-skew-x-[30deg] rounded-lg">
