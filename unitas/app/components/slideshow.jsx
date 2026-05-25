@@ -15,7 +15,6 @@ const images = [
   Image3,
   Image4,
   Image5
-  // Add more image URLs here
 ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -26,7 +25,7 @@ const images = [
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide === images.length - 1 ? 0 : prevSlide + 1));
@@ -37,25 +36,52 @@ const images = [
   };
 
   return (
-    <div className="relative h-full lg:h-[600px] lg:flex lg:mt-24">
-      <div className="overflow-hidden rounded-lg">
-      <Image
+    <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] mt-8 lg:mt-24 fade-in-up">
+      <div className="overflow-hidden rounded-lg w-full h-full">
+        <div className="relative w-full h-full">
+          <Image
+            key={currentSlide}
             src={images[currentSlide]}
-            alt="hero image"
-            className="object-cover lg:rounded-bl-[10px] lg:hover:rounded-bl-[50px] lg:rounded-tr-[10px] lg:hover:rounded-tr-[50px]"
+            alt="slideshow image"
+            fill
+            className="object-cover lg:rounded-bl-[10px] lg:rounded-tr-[10px] image-hover-effect transition-opacity duration-500 ease-smooth"
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 976px) 100vw, 100vw"
+            priority={currentSlide === 0}
           />
+        </div>
+
+        {/* Navigation Buttons */}
         <button
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full focus:outline-none"
+          className="absolute top-1/2 left-4 z-10 transform -translate-y-1/2 p-3 bg-bluenitas hover:bg-opacity-80 text-whitenitas rounded-full transition-all duration-300 ease-smooth focus:outline-none focus:ring-2 focus:ring-whitenitas shadow-md-depth hover:shadow-lg-depth"
           onClick={prevSlide}
+          aria-label="Previous slide"
         >
-          {'<'}
+          <span className="text-lg font-bold">{'<'}</span>
         </button>
+
         <button
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full focus:outline-none"
+          className="absolute top-1/2 right-4 z-10 transform -translate-y-1/2 p-3 bg-bluenitas hover:bg-opacity-80 text-whitenitas rounded-full transition-all duration-300 ease-smooth focus:outline-none focus:ring-2 focus:ring-whitenitas shadow-md-depth hover:shadow-lg-depth"
           onClick={nextSlide}
+          aria-label="Next slide"
         >
-          {'>'}
+          <span className="text-lg font-bold">{'>'}</span>
         </button>
+
+        {/* Slide Indicators */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10 flex gap-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ease-smooth ${
+                index === currentSlide 
+                  ? 'bg-whitenitas w-6' 
+                  : 'bg-whitenitas bg-opacity-50 hover:bg-opacity-75'
+              }`}
+              onClick={() => setCurrentSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -3,39 +3,45 @@ const HomeContent = (props: {
   content: string;
   divDirection: string;
   titleDivDirection: string;
+  delay?: string;
 }) => {
-  const divClassName =
-    "px-[20px] py-4 lg:w-3/4 lg:" +
-    (props.divDirection === "left" ? "" : "-") +
-    "skew-x-[30deg] lg:bg-[#E9E5D3] rounded-lg mt-4";
-  const pClassName =
-    "text-center pt-8 lg:" +
-    (props.divDirection === "left" ? "-" : "") +
-    "skew-x-[30deg] p-6 text-[#405482]";
-  const apClassname =
-    "text-center underline pt-2 pb-6 font-semibold lg:" +
-    (props.divDirection === "left" ? "-" : "") +
-    "skew-x-[30deg] text-[#405482]";
-  const divTitleClassName =
-    "h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 w-full md:w-3/4 lg:" +
-    (props.divDirection === "left" ? "-" : "") +
-    "skew-x-[30deg] rounded-lg";
-  const h1TitleClassname =
-    "pt-[5px] lg:" +
-    (props.divDirection === "left" ? "" : "-") +
-    "skew-x-[30deg] font-semibold";
+  const isLeft = props.divDirection === "left";
+  const isTitleLeft = props.titleDivDirection === "left";
+  const delay = props.delay || "delay-100";
 
   return (
-    <div>
-      <div className={divTitleClassName}>
-        <h1 className={h1TitleClassname}>{props.title}</h1>
-      </div>
-      <div className={divClassName}>
-        <p className={pClassName}>{props.content}</p>
-        <a href="/products">
-          <p className={apClassname}>View our products &rarr;</p>
-        </a>
-      </div>
+    <div className={`fade-in-up ${delay}`}>
+      {/* Title Bar */}
+      {isTitleLeft ? (
+        <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 w-full md:w-3/4 lg:-skew-x-[30deg] rounded-lg skew-transition">
+          <h1 className="pt-[5px] lg:skew-x-[30deg] font-semibold text-whitenitas">{props.title}</h1>
+        </div>
+      ) : (
+        <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 w-full md:w-3/4 lg:skew-x-[30deg] rounded-lg skew-transition">
+          <h1 className="pt-[5px] lg:-skew-x-[30deg] font-semibold text-whitenitas">{props.title}</h1>
+        </div>
+      )}
+
+      {/* Content Box */}
+      {isLeft ? (
+        <div className="px-[20px] py-6 lg:py-8 w-full lg:-skew-x-[30deg] lg:bg-nitas-beige rounded-lg mt-4 skew-transition content-box-depth">
+          <p className="text-center pt-6 lg:pt-8 lg:skew-x-[30deg] p-6 lg:p-8 text-nitas-text leading-[1.75] lg:leading-[1.8]">{props.content}</p>
+          <a href="/products" className="underline-animate">
+            <p className="text-center underline pt-3 pb-6 font-semibold lg:skew-x-[30deg] text-nitas-text hover:text-bluenitas transition-colors duration-300">
+              View our products &rarr;
+            </p>
+          </a>
+        </div>
+      ) : (
+        <div className="px-[20px] py-6 lg:py-8 w-full lg:skew-x-[30deg] lg:bg-nitas-beige rounded-lg mt-4 skew-transition content-box-depth">
+          <p className="text-center pt-6 lg:pt-8 lg:-skew-x-[30deg] p-6 lg:p-8 text-nitas-text leading-[1.75] lg:leading-[1.8]">{props.content}</p>
+          <a href="/products" className="underline-animate">
+            <p className="text-center underline pt-3 pb-6 font-semibold lg:-skew-x-[30deg] text-nitas-text hover:text-bluenitas transition-colors duration-300">
+              View our products &rarr;
+            </p>
+          </a>
+        </div>
+      )}
     </div>
   );
 };

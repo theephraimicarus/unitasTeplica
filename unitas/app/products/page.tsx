@@ -6,7 +6,9 @@ export default function Products() {
   return (
     <>
       <NavBar/>
-      <ProductsPage/>
+      <div className="px-[10px] sm:px-[15px] md:px-[25px] lg:px-[40px] xl:px-[60px]">
+        <ProductsPage/>
+      </div>
       <Footer/>
     </>
   );

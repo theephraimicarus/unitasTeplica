@@ -8,8 +8,10 @@ export default function Home() {
   return (
     <>
       <NavBar/>
-      <HomePage/>
-      <Slideshow/>
+      <div className="px-[10px] sm:px-[15px] md:px-[25px] lg:px-[40px] xl:px-[60px]">
+        <HomePage/>
+        <Slideshow/>
+      </div>
       <Footer/>
     </>
   );

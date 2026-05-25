@@ -1,13 +1,13 @@
-import Image from "next/image";
 import ProductImage from "../../public/assets/products1.jpg";
 import ForkliftImage from "../../public/assets/forklift.jpg";
 import KraftSectionImage from "../../public/assets/kraftimage.jpg";
 import HeroContent from "./content/herocontent";
 import ProductContent from "./content/productcontent";
+import ResponsiveImage from "./ResponsiveImage";
 
 export default function ProductsPage() {
   return (
-    <div className="py-8">
+    <div className="py-8 md:py-12 lg:py-16">
       <HeroContent
         title="What we have to offer"
         content="We offer a wide range of GRAPHIC (LWC, SC, newspaper, wood-free, cardboard) and PACKAGING (kraft, polyethylene) papers.
@@ -15,19 +15,15 @@ export default function ProductsPage() {
 As a responsible and reliable partner, we work with well-known European paper manufacturers and brands such as Steinbeis Papier, Burgo Group, Sappi, Stora Enso, and LEIPA, ensuring consistent quality, sustainable sourcing, and dependable service for our customers."
       />
 
-      <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 w-full md:w-3/4 lg:-skew-x-[30deg] rounded-lg">
-        <h1 className="pt-[5px] lg:skew-x-[30deg] font-semibold">
+      <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 lg:mt-12 w-full md:w-3/4 lg:-skew-x-[30deg] rounded-lg skew-transition">
+        <h1 className="pt-[5px] lg:skew-x-[30deg] font-semibold text-whitenitas">
           Graphic papers
         </h1>
       </div>
 
-      <div className="relative lg:flex my-8">
-        <div className="w-full lg:w-2/4 lg:py-6 ">
-          <Image
-            src={ForkliftImage}
-            alt="hero image"
-            className="object-cover lg:rounded-bl-[10px] lg:hover:rounded-bl-[50px] lg:rounded-tr-[10px] lg:hover:rounded-tr-[50px]"
-          />
+      <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-12 my-8 lg:my-12">
+        <div className="w-full lg:w-2/4">
+          <ResponsiveImage src={ForkliftImage} alt="forklift with paper" />
         </div>
         <div className="w-full lg:w-2/4">
           <ProductContent
@@ -51,14 +47,10 @@ As a responsible and reliable partner, we work with well-known European paper ma
         </div>
       </div>
 
-      <div className="relative lg:flex my-6 pt-8">
-        <div className="w-full lg:w-2/4 lg:py-6 ">
-          <Image
-            src={ProductImage}
-            alt="hero image"
-            className="object-cover lg:rounded-bl-[10px] lg:hover:rounded-bl-[50px] lg:rounded-tr-[10px] lg:hover:rounded-tr-[50px]"
-          />
-          <div className="lg:-mt-32">
+      <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-12 my-8 lg:my-12 pt-8">
+        <div className="w-full lg:w-2/4">
+          <ResponsiveImage src={ProductImage} alt="products paper" />
+          <div className="lg:mt-8">
             <ProductContent
               title="Wood-free paper"
               content="Wood-free paper, also known as tree-free paper, is created
@@ -96,19 +88,15 @@ As a responsible and reliable partner, we work with well-known European paper ma
         </div>
       </div>
 
-      <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-8 w-full md:w-3/4 lg:-skew-x-[30deg] rounded-lg">
-        <h1 className="pt-[5px] lg:skew-x-[30deg] font-semibold lg:mt-12">
+      <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-12 lg:mt-16 w-full md:w-3/4 lg:-skew-x-[30deg] rounded-lg skew-transition">
+        <h1 className="pt-[5px] lg:skew-x-[30deg] font-semibold text-whitenitas">
           Packing papers
         </h1>
       </div>
 
-      <div className="relative lg:flex my-8">
-        <div className="w-full lg:w-2/4 lg:py-6 ">
-          <Image
-            src={KraftSectionImage}
-            alt="hero image"
-            className="object-cover lg:rounded-bl-[10px] lg:hover:rounded-bl-[50px] lg:rounded-tr-[10px] lg:hover:rounded-tr-[50px]"
-          />
+      <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-12 my-8 lg:my-12">
+        <div className="w-full lg:w-2/4">
+          <ResponsiveImage src={KraftSectionImage} alt="kraft paper section" />
         </div>
         <div className="w-full lg:w-2/4">
           <div>
