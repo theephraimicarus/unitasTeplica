@@ -6,14 +6,16 @@ import ResponsiveImage from "./ResponsiveImage";
 export default function HomePage() {
   return (
     <div className="py-8 md:py-12 lg:py-16">
-      <HeroContent
-        title="Over 15 years of experience"
-        content="in the confectionery paper and paper processing industry"
-      />
+      <div className="relative w-screen max-w-none left-1/2 -translate-x-1/2 transform">
+        <ResponsiveImage src="/assets/Untitled.jpg" alt="hero image" />
+      </div>
 
       <div className="mx-auto w-full max-w-[1280px] px-4">
-        <div className="relative w-full max-w-[1100px] mx-auto">
-          <ResponsiveImage src="/assets/Untitled.jpg" alt="hero image" />
+        <div className="mt-6 lg:mt-10 px-[20px]">
+          <HeroContent
+            title="Over 15 years of experience"
+            content="in the confectionery paper and paper processing industry"
+          />
         </div>
 
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-10 mt-10">
