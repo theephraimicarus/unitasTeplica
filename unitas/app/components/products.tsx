@@ -1,13 +1,13 @@
 import ProductImage from "../../public/assets/products1.jpg";
 import ForkliftImage from "../../public/assets/forklift.jpg";
-import KraftSectionImage from "../../public/assets/kraftimage.jpg";
+
 import HeroContent from "./content/herocontent";
 import ProductContent from "./content/productcontent";
 import ResponsiveImage from "./ResponsiveImage";
 
 export default function ProductsPage() {
   return (
-    <div className="py-8 md:py-12 lg:py-16">
+    <div className="py-8 md:py-12 lg:py-16 overflow-x-hidden">
       <div className="relative w-screen max-w-none left-1/2 -translate-x-1/2 transform">
         <ResponsiveImage src={ProductImage} alt="products hero image" />
       </div>
@@ -52,12 +52,14 @@ As a responsible and reliable partner, we work with well-known European paper ma
           </div>
         </div>
 
-        {/* Row 2: Image next to Wood-free paper */}
-        <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-12 my-8 lg:my-12 items-center">
-          <div className="w-full lg:w-1/2">
-            <ResponsiveImage src={ForkliftImage} alt="forklift with paper" />
-          </div>
-          <div className="w-full lg:w-1/2">
+        {/* Row 2: Full-width forklift hero image */}
+        <div className="relative w-screen max-w-none left-1/2 -translate-x-1/2 transform my-8 lg:my-12">
+          <ResponsiveImage src={ForkliftImage} alt="forklift with paper" />
+        </div>
+
+        {/* Row 3: Wood-free paper as a single centered row (viewport-centered) */}
+        <div className="relative w-screen max-w-none left-1/2 -translate-x-1/2 transform">
+          <div className="mx-auto w-full max-w-[1280px] px-4 my-8 lg:my-12 flex justify-center">
             <ProductContent
               title="Wood-free paper"
               content="Wood-free paper, also known as tree-free paper, is created
@@ -67,13 +69,16 @@ As a responsible and reliable partner, we work with well-known European paper ma
                 lignin removed during processing. This removal of lignin makes
                 wood-free paper less susceptible to yellowing as it ages. We
                 offer uncoated and coated wood-free paper."
-              divDirection="right"
+              divDirection="left"
+              noSkew={true}
             />
           </div>
         </div>
 
-        {/* Row 3: Newspaper and Cardboard centered */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-8 lg:my-12 justify-center items-start">
+        {/* Row 4: Newspaper and Cardboard centered (viewport-centered) */}
+        <div className="relative w-screen max-w-none left-1/2 -translate-x-1/2 transform">
+          <div className="mx-auto w-full max-w-[1280px] px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-8 lg:my-12 justify-center items-start">
           <div className="mx-auto lg:mx-0">
             <ProductContent
               title="Newspaper"
@@ -98,6 +103,8 @@ As a responsible and reliable partner, we work with well-known European paper ma
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
       <div className="h-[36px] bg-bluenitas text-whitenitas text-center text-4 mt-12 lg:mt-16 w-full md:w-3/4 mx-auto lg:-skew-x-[30deg] rounded-lg skew-transition">
         <h1 className="pt-[5px] lg:skew-x-[30deg] font-semibold text-whitenitas">
@@ -105,37 +112,36 @@ As a responsible and reliable partner, we work with well-known European paper ma
         </h1>
       </div>
 
-      <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-12 my-8 lg:my-12">
-        <div className="w-full lg:w-2/4">
-          <ResponsiveImage src={KraftSectionImage} alt="kraft paper section" />
-        </div>
-        <div className="w-full lg:w-2/4">
-          <div>
-            <ProductContent
-              title="Kraft paper"
-              content="Kraft paper or kraft is paper or paperboard produced from
-                chemical pulp produced in the kraft process. Sack kraft paper is
-                a porous kraft paper with high elasticity and high tear
-                resistance, designed for packaging products with high demands
-                for strength and durability. Our kraft paper derives from
-                cooperation with Gruenewald paper factories which target
-                non-European markets exclusively, notably Africa and Asia."
-              divDirection="left"
-            />
-          </div>
+        <div className="relative w-screen max-w-none left-1/2 -translate-x-1/2 transform">
+          <div className="mx-auto w-full max-w-[1280px] px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-8 lg:my-12 justify-center items-start">
+              <div className="mx-auto lg:mx-0">
+                <ProductContent
+                  title="Kraft paper"
+                  content="Kraft paper or kraft is paper or paperboard produced from
+                    chemical pulp produced in the kraft process. Sack kraft paper is
+                    a porous kraft paper with high elasticity and high tear
+                    resistance, designed for packaging products with high demands
+                    for strength and durability. Our kraft paper derives from
+                    cooperation with Gruenewald paper factories which target
+                    non-European markets exclusively, notably Africa and Asia."
+                  divDirection="left"
+                />
+              </div>
 
-          <div className="lg:mt-8">
-            <ProductContent
-              title="Kraft paper with polyethylene"
-              content="Kraft paper coated with polyethylene serves as a reliable
-                moisture and grease barrier. It is commonly used in packaging
-                and other applications where safeguarding against environmental
-                factors is essential."
-              divDirection="right"
-            />
+              <div className="mx-auto lg:mx-0">
+                <ProductContent
+                  title="Kraft paper with polyethylene"
+                  content="Kraft paper coated with polyethylene serves as a reliable
+                    moisture and grease barrier. It is commonly used in packaging
+                    and other applications where safeguarding against environmental
+                    factors is essential."
+                  divDirection="right"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </div>
   );
 }

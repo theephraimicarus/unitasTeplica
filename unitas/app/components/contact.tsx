@@ -12,8 +12,15 @@ export default function ContactPage() {
           {/* Contact cards (centered) */}
           <div className="space-y-6 w-full lg:w-2/3">
             <div className="bg-white/80 dark:bg-black/60 backdrop-blur-sm border border-gray-100 rounded-xl p-6 shadow-md">
-              <h2 className="text-lg font-semibold text-bluenitas">Email</h2>
-              <a href="mailto:info@unitaspaper.com" className="mt-3 inline-block text-base text-nitas-text hover:text-bluenitas transition-colors">info@unitaspaper.com</a>
+              <div className="flex justify-between items-start gap-4">
+                <div>
+                  <h2 className="text-lg font-semibold text-bluenitas">Email</h2>
+                  <a href="mailto:info@unitaspaper.com" className="mt-3 inline-block text-base text-nitas-text hover:text-bluenitas transition-colors">info@unitaspaper.com</a>
+                </div>
+                <a href="mailto:info@unitaspaper.com?subject=Enquiry" className="mt-3 px-6 py-2 bg-bluenitas text-whitenitas font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">
+                  Contact
+                </a>
+              </div>
             </div>
 
             <div className="bg-white/80 dark:bg-black/60 backdrop-blur-sm border border-gray-100 rounded-xl p-6 shadow-md">
